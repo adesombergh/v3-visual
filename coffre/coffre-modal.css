@@ -1,0 +1,37 @@
+.coffre-modal .viewport-close{
+   display: none;
+}
+.coffre-modal .the-viewport {
+	overflow: scroll;
+}
+@media all and (max-width: 768px) {
+	.coffre-modal .the-viewport {
+		z-index: 1;
+		position: fixed;
+		top: 0;
+		left: 0;right: 0;
+		bottom: 44px;
+		padding: 0;
+		overflow-y: scroll;
+		background-color: rgba(255,255,255,.96);
+	}
+	.coffre-modal .the-viewport .box {
+		position: absolute;
+		display: block;
+		margin: 0;
+		border-radius: 0;
+		box-shadow: none;
+		top: 15%;
+		left: 0; right: 0;
+		bottom: 0;
+		background: none;
+	}
+	.coffre-modal .viewport-close{
+	   display: block;
+	   z-index: 2;
+	   position: fixed;
+	   top: 5%;
+	   left: 50%;
+	   transform: translate(-50%);
+	}
+}

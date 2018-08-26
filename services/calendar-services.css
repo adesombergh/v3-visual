@@ -1,0 +1,213 @@
+.calendar-services {
+	background: white;
+	border: none;
+	border-radius: 2px;
+	display: block;
+	min-width: 20rem;
+	text-align: center;
+	max-width: 100%;
+}
+/******************************** NAV ********************************/
+.calendar-services .calendar-nav {
+	align-items: center;
+	background: #00d1b2;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1.25rem;
+	padding: .5rem;
+}
+
+.calendar-services .calendar-nav .calendar-nav-left, .calendar-services .calendar-nav .calendar-nav-right {
+	flex-basis: auto;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.calendar-services .calendar-nav .calendar-nav-left .button, .calendar-services .calendar-nav .calendar-nav-right .button {
+	text-decoration: none;
+	color: white;
+}
+
+.calendar-services .calendar-nav .calendar-nav-left .button:hover, .calendar-services .calendar-nav .calendar-nav-right .button:hover {
+	background: transparent;
+	color: whitesmoke;
+}
+
+.calendar-services .calendar-nav .calendar-nav-left {
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.calendar-services .calendar-nav .calendar-nav-right {
+	align-items: center;
+	justify-content: flex-end;
+}
+/******************************** /NAV ********************************/
+/******************************** TOP ********************************/
+.calendar-services .calendar-top {
+	display: flex;
+	color: #7a7a7a;
+	background: #00b89c;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+.calendar-services .calendar-top .top-corner {
+	flex: 0 0 28px;
+	max-width: 28px;
+	height: 28px;
+}
+.calendar-services .calendar-top .day-top {
+	flex: 0 0 calc(14.28% - 4px);
+	max-width: calc(14.28% - 4px);
+	border-left: 1px solid #00d1b2;
+	height: 28px;
+}
+.calendar-services .calendar-top .service-top {
+	display: none;
+}
+@media all and (max-width: 1024px) {
+	.calendar-services .calendar-top .day-top {
+		display: none;
+	}
+	.calendar-services .calendar-top .service-top {
+		display: block;
+		flex: 0 0 calc(50% - 14px);
+		max-width: calc(50% - 14px);
+		border-left: 1px solid #00d1b2;
+		height: 28px;
+	}
+}
+/******************************** /TOP ********************************/
+/******************************** BODY ********************************/
+.calendar-services .calendar-body {
+	display: flex;
+	color: #7a7a7a;
+	background: #00b89c;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+@media all and (max-width: 1024px) {
+	.calendar-services .calendar-body {
+		flex-wrap: wrap-reverse;
+	}
+}
+/******************************** /BODY ********************************/
+/******************************** LEFT ********************************/
+.calendar-services .day-left {
+	display: none;
+}
+.calendar-services  .service-left {
+	flex: 0 0 28px;
+	max-width: 28px;
+	position: relative;
+	border-top: 1px solid #00d1b2;
+}
+@media all and (max-width: 1024px) {
+	.calendar-services .day-left {
+		display: block;
+		flex: 0 0 28px;
+		max-width: 28px;
+		position: relative;
+		border-top: 1px solid #00d1b2;
+	}
+	.calendar-services .service-left {
+		display: none;
+	}
+}
+/******************************** /LEFT ********************************/
+/******************************** HEADER ********************************/
+.is-header {
+	color: #fff;
+	font-size: 0.75rem;
+}
+.is-turned {
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%) rotate(-90deg);
+	width: 100px;
+}
+/******************************** /HEADER ********************************/
+/******************************** CELLS ********************************/
+.calendar-services .calendar-item {
+	flex: 0 0 calc(14.28% - 4px);
+	max-width: calc(14.28% - 4px);
+}
+@media all and (max-width: 1024px) {
+	.calendar-services .calendar-item {
+		flex: 0 0 calc(50% - 14px);
+		max-width: calc(50% - 14px);
+	}
+}
+.calendar-services .service {
+	padding: 10px 7px;
+	background-color: #00d1b2;
+	border-top: 1px solid #00b89c;
+ border-right: 1px solid #00b89c;
+}
+.calendar-services .service-info {
+	text-align: left;
+	white-space: nowrap;
+	padding: 7px 10px;
+	font-size: .8rem;
+}
+.calendar-services .service.row-soir {
+	/*background-color: #f0f0f0;*/
+}
+/******************************** /CELLS ********************************/
+/******************************** CELLS CONTENT ********************************/
+.calendar-services .service-element {
+	margin-left: 7px;
+	margin-right: 7px;
+	margin-bottom: 5px;
+}
+.calendar-services .service-element i{
+	width: 22px;
+}
+.calendar-services .service-element.respo {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 11px;
+	margin-bottom: 15px;
+}
+.calendar-services .service-box {
+	color: #666;
+	padding: .3rem;
+	overflow: scroll;
+	height: 100%;
+	width: 100%;
+}
+/******************************** /CELLS CONTENT ********************************/
+/******************************** ADD BUTTONS ********************************/
+.calendar-services .service-box.button {
+	/*background-color: #fff;*/
+}
+@media all and (max-width: 1024px) {
+	.calendar-services .service-box.button {
+		height: 100px;
+		white-space: pre-wrap;
+	}
+}
+/******************************** /ADD BUTTONS ********************************/
+/******************************** CELLS ORDERS ********************************/
+.calendar-services .row-jour {
+	order: 1;
+}
+.calendar-services .row-soir {
+	order: 2;
+}
+@media all and (max-width: 1024px) {
+.calendar-services .day-left {
+	order: 1;
+}
+.calendar-services .row-jour {
+	order: 1;
+}
+.calendar-services .row-soir {
+	order: 1;
+}
+
+}

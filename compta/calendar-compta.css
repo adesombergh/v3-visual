@@ -1,0 +1,210 @@
+.calendar-compta {
+	background: white;
+	border: none;
+	border-radius: 2px;
+	display: block;
+	min-width: 20rem;
+	text-align: center;
+	max-width: 100%;
+}
+
+/******************************** NAV ********************************/
+.calendar-compta .calendar-nav {
+	align-items: center;
+	background: #00d1b2;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1.25rem;
+	padding: .5rem;
+}
+
+.calendar-compta .calendar-nav .calendar-nav-left, .calendar-compta .calendar-nav .calendar-nav-right {
+	flex-basis: auto;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.calendar-compta .calendar-nav .calendar-nav-left .button, .calendar-compta .calendar-nav .calendar-nav-right .button {
+	text-decoration: none;
+	color: white;
+}
+
+.calendar-compta .calendar-nav .calendar-nav-left .button:hover, .calendar-compta .calendar-nav .calendar-nav-right .button:hover {
+	background: transparent;
+	color: whitesmoke;
+}
+
+.calendar-compta .calendar-nav .calendar-nav-left {
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.calendar-compta .calendar-nav .calendar-nav-right {
+	align-items: center;
+	justify-content: flex-end;
+}
+/******************************** /NAV ********************************/
+/******************************** TOP ********************************/
+.calendar-compta .day-top {
+	flex: 0 0 100%;
+	max-width: 100%;
+	height: 28px;
+	border-left: 1px solid #00d1b2;
+}
+/******************************** /TOP ********************************/
+/******************************** ROW ********************************/
+.calendar-compta .calendar-days {
+	color: #7a7a7a;
+	background: #00b89c;
+	display: flex;
+	align-items: baseline;
+}
+@media all and (max-width: 1024px) {
+	.calendar-compta .calendar-days {
+		flex-wrap: wrap;
+	}
+}
+/******************************** /ROW ********************************/
+/******************************** CELLS ********************************/
+.calendar-compta .day {
+	flex: 0 0 14.28%;
+	max-width: 14.28%;
+	color: #7a7a7a;
+	background: #00b89c;
+	display: flex;
+	flex-wrap: wrap;
+}
+@media all and (max-width: 1024px) {
+	.calendar-compta .day {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+}
+@media all and (max-width: 769px) {
+	.calendar-compta .day {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+@media all and (max-width: 409px) {
+	.calendar-compta .day {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+/******************************** /CELLS ********************************/
+/******************************** SUBCELLS ********************************/
+.day-content {
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding: 5px;
+	background-color: #00d1b2;
+	/*border-right: 1px solid #00b89c;*/
+	font-size: 0.75rem;
+	text-align: left;
+}
+/******************************** /SUBCELLS ********************************/
+/******************************** CELLS CONTENT ********************************/
+.calendar-compta .day-box {
+	color: #666;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.calendar-compta .day-box:last-child {
+	margin-bottom: 0px;
+}
+.calendar-compta .service-element {
+	padding: .2rem 1.5rem;
+}
+.calendar-compta .service-element:last-child {
+	padding-bottom: 15px;
+}
+.calendar-compta .service-element.box-header {
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	font-weight: 700;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.calendar-compta .service-element i{
+	width: 20px;
+}
+.calendar-compta .navigator {
+	display: flex;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 11px;
+	align-items: stretch;
+	justify-content: space-between;
+	padding: 7px 10px 7px 10px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	background-color: hsl(0, 0%, 98%);
+}
+.calendar-compta .navigator a,
+.calendar-compta .navigator span {
+	padding: 5px;
+}
+.calendar-compta .navigator a {
+	color: #aaa;
+}
+.calendar-compta .navigator a:hover {
+	color: #666;
+}
+.calendar-compta .service-content {
+	padding-top: 10px;
+	border-radius: 5px;
+	color: #666;
+	display: block;
+	border: 1px solid rgba(255,255,255,0);
+}
+.calendar-compta .service-content:hover {
+	border: 1px solid blue;
+	border-top: 1px solid rgba(0,0,255,.3);
+}
+.compta-box .caisse-item {
+    margin-bottom: 3px;
+}
+.compta-box .caisse-item:hover {
+	font-weight: 600;
+}
+.compta-box .caisse-item span{
+	float: right;
+}
+/******************************** /CELLS CONTENT ********************************/
+/******************************** RESULTS ********************************/
+.results{
+	background-color: #00d1b2;
+	padding: 0 0 14px 0;
+	overflow: scroll;
+}
+/******************************** /RESULTS ********************************/
+/******************************** HEADER STYLE ********************************/
+.is-header {
+	color: #fff;
+	font-size: 0.75rem;
+}
+.is-turned {
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%) rotate(-90deg);
+	width: 100px;
+}
+/******************************** /HEADER STYLE ********************************/
+.legends {
+	margin-top: 10px;
+	padding: 0;
+	font-weight: 500;
+}
+.legends span {
+	color: #666;
+}
+
+.stats-box table {
+	margin-bottom: 0;
+}

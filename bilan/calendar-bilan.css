@@ -1,0 +1,50 @@
+.calendar-bilan {
+	border: none;
+	border-radius: 2px;
+	display: block;
+	min-width: 20rem;
+	text-align: center;
+	max-width: 100%;
+	font-size: .8rem;
+}
+/******************************** NAV ********************************/
+.calendar-bilan .calendar-nav {
+	align-items: center;
+	background: #00d1b2;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1.25rem;
+	padding: .5rem;
+}
+
+.calendar-bilan .calendar-nav .calendar-nav-left, .calendar-bilan .calendar-nav .calendar-nav-right {
+	flex-basis: auto;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.calendar-bilan .calendar-nav .calendar-nav-left .button, .calendar-bilan .calendar-nav .calendar-nav-right .button {
+	text-decoration: none;
+	color: white;
+}
+
+.calendar-bilan .calendar-nav .calendar-nav-left .button:hover, .calendar-bilan .calendar-nav .calendar-nav-right .button:hover {
+	background: transparent;
+	color: whitesmoke;
+}
+
+.calendar-bilan .calendar-nav .calendar-nav-left {
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.calendar-bilan .calendar-nav .calendar-nav-right {
+	align-items: center;
+	justify-content: flex-end;
+}
+/******************************** /NAV ********************************/
+.calendar-bilan table {
+	margin-bottom: 0;
+}
